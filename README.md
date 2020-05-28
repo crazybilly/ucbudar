@@ -53,6 +53,7 @@ New
 ----------------------
 - CDW connetions
 - CDW table connections
+- ROracle dependencies? 
 
 
 Revise
@@ -66,17 +67,20 @@ Revise
 - giftandmemos
 - muadc.package
 - validate-lists
+- dbReconnect needs a way to reconnect user-created db tibbles
 
 
 
 Remove
 -----------------
-- appstdi-to-df
-- bannerize-pidm
-- createhallpwitholdname
 - data/oldhallpnames
-- initcommitdb
-- muplot 
 - startup
-- variables
+- RMYSQL dependencies
+
+x appstdi-to-df
+x bannerize-pidm
+x createhallpwitholdname
+x initcommitdb
+x muplot 
+x variables
 

@@ -19,9 +19,10 @@ Imports:
     stringr,
     readr,
     DBI,
-    RMySQL,
-    pool,
-    RMariaDB,
+    dbplyr,
     formattable,
-    odbc
-RoxygenNote: 7.0.2
+    odbc,
+    pool,
+    RMySQL,
+    RMariaDB,
+RoxygenNote: 7.1.0
