@@ -13,5 +13,5 @@ is.blank(x)
 a vector of logical values, where TRUE indicates blank values
 }
 \description{
-tests a vector, returning TRUE if values are NA, NULL, blank strings or NAN. Also searches for the string "()-", often used as an empty phone number.
+tests a vector, returning TRUE if values are NA, NULL, blank strings or NAN. Also returns \code{TRUE} for strings that are entirely spaces or are "()-", often used as an empty phone number.
 }
