@@ -19,8 +19,14 @@ getSQL <- function(filepath, returnsql = T){
 
     line <- gsub("\\t", " ", line)
 
+    # replace -- comments with /*
     if(grepl("--",line) == TRUE){
       line <- paste(sub("--","/*",line),"*/")
+    }
+
+    # remove RStudio preview connection, which seems to bomb things out
+    if(grepl('!preview conn=')== TRUE){
+      line  <- ""
     }
 
     sql.string <- paste(sql.string, line)
