@@ -51,7 +51,7 @@ Contains the following aliases, primarily for interactive use:
 
 New
 ----------------------
-- CDW connetions
+- CDW connections
 - CDW table connections
 - ROracle dependencies? 
 

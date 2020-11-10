@@ -1,6 +1,6 @@
-Binding: muadc.package
-Title: MU ADC Project
-Icon: millikin-m.png
+Binding: udar.package
+Title: UDAR ISA Project
+Icon: cal.png
 
 
 Parameter: create_skel
