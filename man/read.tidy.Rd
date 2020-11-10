@@ -16,7 +16,7 @@ read.tidy(x = "clipboard", sep = "\\t", ifexists = F, existsname, ...)
 \item{existsname}{what object should the function look for, assuming ifexists = T. If ifexists == T and existname is not empty, the function will return the object with name = existsname.}
 
 \item{...}{
-  Arguments passed on to \code{\link[utils:read.csv]{utils::read.csv}}
+  Arguments passed on to \code{\link[utils:read.table]{utils::read.csv}}
   \describe{
     \item{\code{header}}{a logical value indicating whether the file contains the
     names of the variables as its first line.  If missing, the value is
