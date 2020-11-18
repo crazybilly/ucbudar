@@ -25,7 +25,7 @@ getSQL <- function(filepath, returnsql = T){
     }
 
     # remove RStudio preview connection, which seems to bomb things out
-    if(grepl('!preview conn=')== TRUE){
+    if(grepl('!preview conn=', line)== TRUE){
       line  <- ""
     }
 
