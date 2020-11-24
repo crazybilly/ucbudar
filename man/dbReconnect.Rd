@@ -4,7 +4,10 @@
 \alias{dbReconnect}
 \title{dbReconnect}
 \usage{
-dbReconnect()
+dbReconnect(con)
+}
+\arguments{
+\item{con}{a existing database connection to reconnect to}
 }
 \value{
 returns TRUE invisibly
