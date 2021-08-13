@@ -25,10 +25,5 @@ Imports:
     readr,
     DBI,
     dbplyr,
-    formattable,
-    odbc,
-    pool,
-    ggplot2,
-    RMySQL,
-    RMariaDB 
+    formattable
 RoxygenNote: 7.1.1
