@@ -10,6 +10,11 @@ License: GPL 2 or higher
 LazyData: true
 Roxygen: list(markdown = TRUE)
 Imports:
+    stats,
+    utils,
+    graphics,
+    datasets,
+    grDevices,
     dplyr,
     magrittr,
     lazyeval,
@@ -23,6 +28,7 @@ Imports:
     formattable,
     odbc,
     pool,
+    ggplot2,
     RMySQL,
     RMariaDB 
 RoxygenNote: 7.1.1

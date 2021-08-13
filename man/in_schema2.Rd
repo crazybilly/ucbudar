@@ -12,5 +12,5 @@ in_schema2(schema, table)
 \item{table}{the name of a database table}
 }
 \description{
-a convience wrapper around \link[dbplyr]{in_schema} that capitalizes the schema and table names. Apparently, some combination of recent versions of ODBC and/or R are case-sensitive with regard to table names (this was not the case prior to October 2020). So, this just capitalizes the table names so you don't have to fight it.
+a convenience wrapper around \link[dbplyr]{in_schema} that capitalizes the schema and table names. Apparently, some combination of recent versions of ODBC and/or R are case-sensitive with regard to table names (this was not the case prior to October 2020). So, this just capitalizes the table names so you don't have to fight it.
 }

@@ -4,7 +4,7 @@
 \alias{count.na}
 \title{Count.NA}
 \usage{
-count.na(x)
+\method{count}{na}(x)
 }
 \arguments{
 \item{an}{object to count. All bets are off if you don't pass a data frame or a vector.}

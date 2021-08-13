@@ -9,11 +9,11 @@ df.as.text(df, sep = "\\t")
 \arguments{
 \item{df}{a data frame to convert to a vector}
 
-\item{sep}{a delimiter. Defaults to tab-seperated text.}
+\item{sep}{a delimiter. Defaults to tab-separated text.}
 }
 \value{
-a character vector with one entry per row of the data frame. Each row is collasped to a single entry with variables separated by tabs. NA and Inf values are replaced with blanks.
+a character vector with one entry per row of the data frame. Each row is collapsed to a single entry with variables separated by tabs. NA and Inf values are replaced with blanks.
 }
 \description{
-collapse a data frame into a tab-seperated text table, suitable for a .tsv file. Particularly useful for stringing multiple data frames together into a single report.
+collapse a data frame into a tab-separated text table, suitable for a .tsv file. Particularly useful for stringing multiple data frames together into a single report.
 }
