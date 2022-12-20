@@ -7,7 +7,7 @@
 \method{count}{na}(x)
 }
 \arguments{
-\item{an}{object to count. All bets are off if you don't pass a data frame or a vector.}
+\item{x}{an object to count. All bets are off if you don't pass a data frame or a vector.}
 }
 \value{
 If x is a vector, returns a single numeric count of the NAs in the vector. If x is a data frame, returns a two-column data frame with counts for each column of the data frame.

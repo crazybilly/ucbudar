@@ -4,11 +4,12 @@ Title: A collection of functions and variables for working with data at UC Berke
 Version: 1.0
 Date: 2020-05-25
 Author: CrazyBilly
-Maintainer: Jake Tolbert <crazybilly@gmail.com>
-Description: A collection of functions and variables for day to day work at UC Berkeley's UDAR division.
+Maintainer: Jake Tolbert <jaketolbert@berkeley.edu>
+Description: A collection of functions and variables for day to day work at the Information Strategy & Analytics team within UC Berkeley's UDAR division.
 License: GPL 2 or higher
 LazyData: true
 Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
 Imports:
     stats,
     utils,
@@ -17,13 +18,17 @@ Imports:
     grDevices,
     dplyr,
     magrittr,
+    stringr,
+    lubridate,
+    beepr,
+    glue,
+    rstudioapi,
+    tibble,
     lazyeval,
-    stringr,
     purrr,
-    stats,
-    stringr,
     readr,
     DBI,
     dbplyr,
-    formattable
-RoxygenNote: 7.1.1
+    formattable,
+    googlesheets4
+RoxygenNote: 7.2.3

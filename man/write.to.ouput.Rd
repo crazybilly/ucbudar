@@ -11,9 +11,6 @@ write.to.ouput(df, ...)
 
 \item{...}{additional arguments passed to \code{write.csv()}}
 }
-\value{
-
-}
 \description{
 Write To Output Directory
 }

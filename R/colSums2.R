@@ -4,7 +4,7 @@
 
 
 #' @title Column Sums (safe-ish)
-#' @desciption calculate column sums for all columns, returning NA for columns that won't coerce to numeric
+#' @description calculate column sums for all columns, returning NA for columns that won't coerce to numeric
 #'
 #' @param df a data frame with columns to sum
 #' @param remove_non_numeric a logical value determing whether or not NA values (ie. columns that cannot be cooreced to numeric and therefore won't sum) should be removed from the returned results

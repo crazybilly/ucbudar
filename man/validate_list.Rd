@@ -21,6 +21,9 @@ validate_list(df, type = "mail", solicitation = T, h = hallptbl)
 
 \item{h}{a database table or local data frame that looks like hallptbl}
 }
+\value{
+list with summary data. An html report of the data will be opened as well
+}
 \description{
 Validate an Mail or Email List
 }

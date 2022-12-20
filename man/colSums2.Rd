@@ -17,5 +17,5 @@ colSums2(df, remove_non_numeric = F, na.rm = T)
 a one-row data frame with the sum of each column. Columns that cannot be summed return NA unless remove_non_numeric=T
 }
 \description{
-Column Sums (safe-ish)
+calculate column sums for all columns, returning NA for columns that won't coerce to numeric
 }

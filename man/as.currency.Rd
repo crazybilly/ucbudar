@@ -15,3 +15,6 @@ a vector of strings formated as currency, with commas and dollar signs.
 \description{
 Given a numeric vector, format it as currency, implicitly changing it to a string.
 }
+\details{
+Think about using formattable::currency() instead, which preserves numbers (but displays them as currency).
+}
