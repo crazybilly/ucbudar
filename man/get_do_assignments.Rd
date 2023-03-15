@@ -24,7 +24,7 @@ get_do_assignments(
 
 \item{include_post_commit_assignments}{a logical indicating whether assignments which started after the proposal commit/turndown date should be include. TRUE to include stewardship and planned giving assignments. FALSE for standard gift cultivation-type assignments.}
 
-\item{db}{an active database connection}
+\item{db}{an active database connection. Must be PROD (the data needed to build qualifications doesnt live in CDW2)}
 }
 \value{
 a database tibble with one row per fundraiser/assignment/proposal/prospect/entity. Includes non-primary entities for all prospects.

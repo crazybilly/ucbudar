@@ -5,7 +5,7 @@
 #' @param fundraiser_id an optional vector of fundraiser entity IDs
 #' @param unit an optional vector of assignment office codes
 #' @param include_post_commit_assignments a logical indicating whether assignments which started after the proposal commit/turndown date should be include. TRUE to include stewardship and planned giving assignments. FALSE for standard gift cultivation-type assignments.
-#' @param db an active database connection
+#' @param db an active database connection. Must be PROD (the data needed to build qualifications doesnt live in CDW2)
 #'
 #' @return a database tibble with one row per fundraiser/assignment/proposal/prospect/entity. Includes non-primary entities for all prospects.
 #' @export
@@ -23,8 +23,8 @@ get_do_assignments    <- function(start_date = fyStartDate, end_date = fyEndDate
     filter(
         ASSIGNMENT_TYPE == 'DO'
       , !is.na(PROPOSAL_ID)
-      , START_DATE <= to_date(local(the_start_dt), 'YYYY-MM-DD')
-      , (is.na(STOP_DATE) | STOP_DATE >= to_date(local(the_end_dt), 'YYYY-MM-DD'))
+      , START_DATE <= to_date(local(the_end_dt), 'YYYY-MM-DD')
+      , (is.na(STOP_DATE) | STOP_DATE >= to_date(local(the_start_dt), 'YYYY-MM-DD'))
     )
 
   if(!missing(fundraiser_id)) {
@@ -45,6 +45,8 @@ get_do_assignments    <- function(start_date = fyStartDate, end_date = fyEndDate
       , FUNDRAISER_ID = ASSIGNMENT_ENTITY_ID
       , FUNDRAISER_LAST_NAME  = ASSIGNMENT_LAST_NAME
       , FUNDRAISER_FIRST_NAME = ASSIGNMENT_FIRST_NAME
+      , UNIT = OFFICE_CODE
+      , UNIT_NAME = OFFICE_DESC
       , ASSIGNMENT_ACTIVE = ACTIVE_IND
       , ASSIGNMENT_START_DT = START_DATE
       , ASSIGNMENT_STOP_DT  = STOP_DATE
